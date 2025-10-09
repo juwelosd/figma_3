@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  <!--=== custom===tailwind====setup===started===here== -->
+    <link rel="stylesheet" href="style.css" />
+    <!--=== custom===tailwind====setup===started===here== -->
     <style type="text/tailwindcss">
       @theme {
         --color-primary-gray: #353749;
@@ -42,10 +42,10 @@
       }
     </style>
     <!--=== custom===tailwind====setup===end===here== -->
-
-</head>
-<body>
-  <section  style="
+  </head>
+  <body>
+    <section
+      style="
         background-image: url(assets/image/image.png);
         background-position: center;
         background-size: cover;
@@ -53,56 +53,60 @@
       "
       class="w-full h-[802px]"
     >
- <nav class="w-auto h-auto py-[26px] gap-x-12">
-      <div class=" container flex flex-row justify-between">
+      <nav class="w-auto h-auto py-[26px]">
+        <div class="container">
+          <div class="flex flex-row justify-between">
+            <img src="assets/image/plen.svg" class="w-[101.42px] h-[52.61px]" alt="" />
 
-<img src="assets/image/plen.svg" class="w-[101.42px] h-[52.61px]" alt="">
+            <ul class="flex flex-row items-center gap-x-8 bg-gradint-to-r from-red-500 to-blue-500">
+              <li class="text-lg font-[590] leading-[152%] hover text-white hover:text-[#89CE14]">
+                <a href="#">About</a>
+              </li>
+              <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                <a href="#">Services</a>
+              </li>
+              <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                <a href="#">About Us</a>
+              </li>
+              <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                <a href="#">Rates</a>
+              </li>
+              <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                <a href="#">Cost Calculator</a>
+              </li>
+              <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                <a href="#">Benefits</a>
+              </li>
+            </ul>
+            <div class="flex flex-row items-center gap-x-3">
+              <button
+                class="h-auto w-auto py-3 px-[40.5px] text-white bg-[#89CE14] border-[1px] border-transparent ease-in-out duration-500 rounded-[8px] hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
+              >
+                Sign Up
+              </button>
+              <button
+                class="h-auto w-auto py-3 px-[40.5px] text-[#89CE14] bg-transparent border-[1px] border ease-in-out duration-500 rounded-[8px] hover:border-solid border-[#89CE14] hover:text-white hover:bg-[#89CE14] cursor-pointer text-base font-[590]"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
 
+          <div class=" w-auto h-auto flex flex-row justify-between py-[300px]">
+            <div><img src="assets/image/Frame 2147225008.png" alt="" /></div>
+            <div class="">
+           <h1 class="text-[66px] text-white font-bold max-w-[576px]">Welcome to Swift Express Cargo</h1>
+            <p class="text-[20px] text-white font-normal max-w-[575px] leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Congue lacinia tempor orci tellus sollicitudin
+              morbi. Duis massa sit
+            </p>
+            </div>
+          
 
-
-  <ul class="flex flex-row items-center gap-x-8 bg-gradint-to-r from-red-500 to-blue-500">
-          <li class="text-lg font-[590] leading-[152%] hover text-white  hover:text-[#89CE14]">
-            <a href="#">About</a>
-          </li>
-          <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14] ">
-            <a href="#">Services</a>
-          </li>
-          <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
-            <a href="#">About Us</a>
-          </li>
-          <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
-            <a href="#">Rates</a>
-          </li>
-          <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
-            <a href="#">Cost Calculator</a>
-          </li>
-          <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
-            <a href="#">Benefits</a>
-          </li>
- 
-</ul>
-<div class="flex flex-row items-center gap-x-3">
-  <button
-            class="h-auto w-auto py-3 px-[40.5px] text-white bg-[#89CE14] border-[1px] border-transparent 
-            ease-in-out duration-500 rounded-[8px] hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
-             hover:bg-transparent cursor-pointer text-base font-[590]"
-          >
-            Sign Up
-          </button>
-           <button
-            class="h-auto w-auto py-3 px-[40.5px] text-[#89CE14] bg-transparent  border-[1px] border 
-            ease-in-out duration-500 rounded-[8px] hover:border-solid border-[#89CE14] hover:text-white hover:bg-[#89CE14]
-             cursor-pointer text-base font-[590]"
-          >
-            Sign In
-          </button>
-
-</div>
-
-      </div>
-
-    </nav>
-  </section>
-   
-</body>
+            <div><img src="assets/image/Frame 2147225007.png" alt="" /></div>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </body>
 </html>
