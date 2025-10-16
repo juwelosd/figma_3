@@ -1,12 +1,14 @@
- document.getElementById("menu-toggle").addEventListener("click", function () {
-        const mobileMenu = document.getElementById("mobile-menu");
-        mobileMenu.classList.toggle("hidden");
-      });
+ const carousel = document.getElementById("carousel");
+    const slides = carousel.children;
+    const totalSlides = slides.length;
+    let index = 0;
 
-      document.getElementsByClassName("fa-bars")[0].addEventListener("click", function () {
-        if (this.classList.contains("fa-bars")) {
-          this.classList.replace("fa-bars", "fa-xmark");
-        } else {
-          this.classList.replace("fa-xmark", "fa-bars");
-        }
-      });
+    document.getElementById("next").addEventListener("click", () => {
+      index = (index + 1) % totalSlides;
+      carousel.style.transform = ` translateX(-${index * 100}%)`;
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+      index = (index - 1 + totalSlides) % totalSlides;
+      carousel.style.transform =` translateX(-${index * 100}%)`;
+    });
