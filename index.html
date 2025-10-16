@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    >
+  </script>
     <title>Document</title>
     <link
       rel="stylesheet"
@@ -86,12 +91,14 @@
               </ul>
               <div class="flex flex-row gap-x-3 items-center">
                 <button
-                  class="h-auto w-auto py-3 px-[40.5px] text-white bg-[#89CE14] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
+                  class="h-auto w-auto py-3 px-[40.5px] text-white bg-linear-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
                 >
                   Sign Up
                 </button>
                 <button
-                  class="h-auto w-auto py-3 px-[40.5px] text-[#89CE14] bg-transparent border-[1px] border ease-in-out duration-500 rounded-full hover:border-solid border-[#89CE14] hover:text-white hover:bg-[#89CE14] cursor-pointer text-base font-[590]"
+                  class="h-auto w-auto py-3 px-[40.5px] text-[#89CE14] bg-transparent border-[1px]
+                   border ease-in-out duration-500 rounded-full
+                    hover:border-solid border-[#89CE14] hover:text-white hover:bg-linear-to-r from-[#6DA015] to-[#46C0A2] cursor-pointer text-base font-[590]"
                 >
                   Sign In
                 </button>
@@ -105,7 +112,12 @@
 
    <div class="w-auto h-auto flex flex-row justify-between items-center">
               <div class="mt-[25px]">
-                <img src="assets/image/Frame 2147225008.png" alt="" />
+                 <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"
+
+           ><ion-icon name="chevron-back-outline"></ion-icon></button>
               </div>
               <div class="text-center w-[576px] speace-y-10">
                 <h1 class="text-[66px] text-white font-bold">Welcome to Swift Express Cargo</h1>
@@ -124,7 +136,10 @@
                       class="w-[400px] bg-transparent text-white placeholder:text-[18px] placeholder:font-[100] text-lg focus:outline-none pl-3"
                     />
                     <button
-                      class="h-auto w-auto py-3 px-[40.5px] text-white bg-[#89CE14] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
+                      class="h-auto w-auto py-3 px-[40.5px] text-white
+                       bg-linear-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500
+                        rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base font-[590]"
                     >
                       Track Now
                     </button>
@@ -133,7 +148,11 @@
               </div>
 
               <div class="mt-[29px]">
-                <img src="assets/image/Frame 2147225007.png" alt="" />
+               <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2] ">
+                         <ion-icon name="chevron-forward-outline"></ion-icon></button>
               </div>
             </div>
 
@@ -144,10 +163,7 @@
             </div>
           </div>
         </div>
-</div>
-            
-         
-     
+       </div> 
     </header>
 
     <!-- <-----------navbar-----------section----end------------------->
@@ -158,9 +174,18 @@
         <h3 class="text-[36px] font-[700] text-[#333333] leading-[132%]">Popular Brands</h3>
 
         <div class="flex flex-row gap-x-3">
-          <img src="assets/image/Frame 2147224829.png" alt="" />
+          <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"
 
-          <img src="assets/image/Frame 2147224830.png" alt="" />
+           ><ion-icon name="chevron-back-outline"></ion-icon></button>
+
+          <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2] ">
+                         <ion-icon name="chevron-forward-outline"></ion-icon></button>
         </div>
       </div>
       <div class="grid lg:grid-cols-7 sm:grid-cols-1 gap-6 h-auto w-auto py-[20px] gap-x-7">
@@ -478,7 +503,8 @@
           </div>
           <button
             href="#"
-            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl bg-gradient-to-r from-green-600 to-green-400 text-white font-semibold shadow hover:scale-105 transform transition"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
           >
             READ MORE
           </button>
@@ -503,7 +529,8 @@
           </div>
           <button
             href="#"
-            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl bg-gradient-to-r from-green-600 to-green-400 text-white font-semibold shadow hover:scale-105 transform transition"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
           >
             READ MORE
           </button>
@@ -528,7 +555,8 @@
           </div>
           <button
             href="#"
-            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl bg-gradient-to-r from-green-600 to-green-400 text-white font-semibold shadow hover:scale-105 transform transition"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+             bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
           >
             READ MORE
           </button>
@@ -631,9 +659,18 @@
           </p>
 
           <div class="flex flex-row gap-x-3">
-            <img src="assets/image/Frame 2147224829.png" alt="" />
+           <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"
 
-            <img src="assets/image/Frame 2147224830.png" alt="" />
+           ><ion-icon name="chevron-back-outline"></ion-icon></button>
+
+          <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2] ">
+                         <ion-icon name="chevron-forward-outline"></ion-icon></button>
           </div>
         </div>
 
@@ -702,7 +739,11 @@
 
     <!-- <-----------every time-----------section----start------------------->
     <section class="container mt-20 pb-20">
-      <div class="py-30 text-center h-auto w-auto bg-[#6DA015] rounded-[20px]">
+      <div class="relative">
+        <div class="w-[277.27px] h-[290.88px] absolute top-[-27px]  right-[-110px] text-[#FFFFFF]">
+          <img src="assets/image/border2.png" alt="">
+        </div>
+        <div class="py-30 text-center bg-linear-to-r from-[#6DA015] to-[#46C0A2]   h-auto w-auto  rounded-[20px]">
         <h1 class="text-[36px] text-white font-[700]">Hassle-Free Shipping, Every Time</h1>
         <p class="text-[16px] text-[#FFFFFF] font-[400] leading-[150%]">
           Inscreva-se em nossa newsletter e tenha acesso exclusivo a conteúdos educacionais, dicas
@@ -715,6 +756,11 @@
           Sign Up For Free
         </button>
       </div>
+      <div class="w-[277.27px] h-[290.88px] absolute bottom-[-110px]  left-[-10px] text-[#FFFFFF]">
+        <img src="assets/image/border1.png" alt="">
+      </div>
+      </div>
+    
     </section>
     <!-- <-----------every time-----------section----end------------------->
     <!-- <-----------footer-----------section----start------------------->
@@ -793,17 +839,28 @@
                   class="w-auto bg-transparent text-white p-3 placeholder:text-[18px] placeholder:font-[100] placeholder:text-[#313131] text-lg focus:outline-none"
                 />
                 <button
-                  class="h-auto w-auto py-2 px-[20px] mr-1 text-white bg-[#89CE14] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
+                  class="h-auto w-auto py-2 px-[20px] mr-1 text-white bg-linear-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
                 >
                   Subscrube
                 </button>
               </div>
             </div>
 
-            <div class="text-[#6DA015] h-auto w-auto flex flex-row gap-x-5">
-              <div><img src="assets/image/Frame 2147224668.png" alt="" /></div>
-              <div><img src="assets/image/Frame 2147224669.png" alt="" /></div>
-              <div><img src="assets/image/Frame 2147224670.png" alt="" /></div>
+            <div class=" h-auto w-auto flex flex-row gap-x-5">
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]">
+               <i class="fa-brands fa-facebook-f"></i></button>
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"><i class="fa-brands fa-instagram"></i></button>
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"><i class="fa-brands fa-twitter"></i></button>
+             
             </div>
           </div>
         </div>
