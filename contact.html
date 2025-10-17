@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    >
+  </script>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Document</title>
+        <style type="text/tailwindcss">
+      @theme {
+        --color-primary-gray: #353749;
+        --color-primary-blue: #0c1634;
+        --color-secondary-blue: #193071;
+        --color-secondary-gray: #b1b2b9;
+        --color-light-blue: #3990a9;
+        --color-primary-red: #cc1609;
+        --color-secondary-red: #cb5549;
+        --color-primary-cyan: #968b7c;
+        --color-secondary-white: #f9f9f9;
+
+        --shadow-primary: 0 4px 25px -4px rgba(0, 0, 0, 0.1);
+        --shadow-secondary: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+        --breakpoint-xs: 375px;
+        --breakpoint-sm: 480px;
+        --breakpoint-md: 576px;
+        --breakpoint-lg: 768px;
+        --breakpoint-xl: 1024px;
+        --breakpoint-2xl: 1320px;
+
+        --container-max-width: 1320px;
+        --container-padding-x: 1rem;
+      }
+
+      .container {
+        max-width: var(--container-max-width);
+        padding-left: var(--container-padding-x);
+        padding-right: var(--container-padding-x);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+</head>
+<body>
+      <header  style="
+        background-image: url(assets/image/contact1.webp);
+      
+       "  class="h-screen bg-cover bg-center " >
+
+  <nav class="w-full h-auto backdrop-blur-lg fixed z-50 bg-[#1818181a] ">
+        <div class=" h-[90px]">
+          <div class="container">
+            <div class="flex flex-row w-auto    justify-between py-[10px]">
+              <img src="assets/image/plen.svg" class="w-[100px] h-[52px]" alt="" />
+              <ul class="flex flex-row gap-x-8 items-center text-white">
+                <li class="text-lg font-[590] leading-[152%] hover text-white hover:text-[#89CE14]">
+                  <a href="#">About</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="services.html">Services</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="#">Rates</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="#">Cost Calculator</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="#">Benefits</a>
+                </li>
+              </ul>
+              <div class="flex flex-row gap-x-3 items-center">
+                <button
+                  class="h-auto w-auto py-3 px-[40.5px] text-white bg-linear-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
+                >
+                  Sign Up
+                </button>
+                <button
+                  class="h-auto w-auto py-3 px-[40.5px] text-[#89CE14] bg-transparent border-[1px]
+                   border ease-in-out duration-500 rounded-full
+                    hover:border-solid border-[#89CE14] hover:text-white hover:bg-linear-to-r from-[#6DA015] to-[#46C0A2] cursor-pointer text-base font-[590]"
+                >
+                  Sign In
+                </button>
+              </div>
+            </div>
+              </nav>
+               <div class="container">
+    <div class="text-center  pt-[185px]">
+        <h1 class="text-[68px] font-[700] leading-[110%] text-[#FFFFFF]">All Blog</h1>
+        <p class="text-[20px] text-[#606060] font-[400]  leading-[150%] py-2 ">Lorem ipsum dolor sit amet consectetur.
+             Congue lacinia <br> tempor orci tellus sollicitudin morbi.
+             Duis massa sit  </p>
+    </div>
+    </div>
+
+    </header>
+    
+    <section class="container py-12">
+        <div class="text-center">
+            <h1 class="text-[36px] text-[#333333] font-[700] leading-[120%]">Contact With Us</h1>
+            <p class="text-[20px] text-[#606060] font-[300] leading-[130%]">Lorem ipsum dolor sit amet consectetur. Congue lacinia <br>
+          tempor orci tellus sollicitudin morbi. Duis </p>
+        </div>
+      <div class="w-auto">
+      <div class=" py-10">
+      
+          <div class="flex flex-col w-[350px] h-[647px]   bg-linear-to-r from-[#6DA015]/10 to-[#46C0A2]/10 justify-between">
+            <div class="py-5 px-5">
+              <h1 class="font-[600] text-[28px] leading-[100%]  text-[#606060]">Contact Information</h1>
+              <p class="pt-2 text-[18px] text-[#606060] font-[400] leading-[100%]">
+               Say something to start a live chat!
+              </p>
+            </div>
+            <div class="flex flex-col px-5 space-y-6">
+              <div class="inline-flex space-x-2 items-center">
+                <ion-icon name="call" class="text-[#666666] text-xl animate-bounce"></ion-icon>
+                <span class="text-[#666666]">+1012 3456 789</span>
+              </div>
+              <div class="inline-flex space-x-2 items-center">
+                <ion-icon name="mail" class="text-[#666666] text-xl animate-ping"></ion-icon>
+                <span class="text-[#666666]">demo@gmail.com</span>
+              </div>
+              <div class="inline-flex space-x-2 items-center">
+                <ion-icon name="location" class="text-[#666666] text-xl animate-pulse"></ion-icon>
+                <span class="text-[#666666]">Massachusetts 02156 United Statesh</span>
+              </div>
+            </div>
+         <div class="flex flex-row  relative justify-between">
+            <div class=" h-auto w-auto pb-5 px-5 flex flex-row gap-x-5">
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]">
+               <i class="fa-brands fa-facebook-f"></i></button>
+
+
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"><i class="fa-brands fa-instagram"></i></button>
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"><i class="fa-brands fa-twitter"></i></button>
+             
+            </div>
+             <div class=" w-[150px] h-[150px] absolute  right-0 bottom-1 ">
+           <img src="assets/image/cont2.png" alt="">
+           </div>
+           <div class=" w-[100px] h-[100px] absolute  right-15 bottom-15">
+            <img src="assets/image/cont3.png" alt="">
+           </div>
+          </div>
+            </div>
+          </div>
+
+
+   <form action="">
+        <div class="flex flex-row gap-x-5">
+          <div>
+           <label for="">First Name</label>
+          <br>
+          <input type="text" placeholder="1">
+          <hr class="w-[50px]">
+          </div>
+         
+
+
+          <div>
+           <label for="">Last Name</label>
+          <br>
+          <input type="text" placeholder="Doe">
+          <hr class="w-[50px]">
+          </div>
+
+
+
+
+        </div>
+      </form>
+</div>
+   
+
+
+   
+
+    </section>
+</body>
+</html>
