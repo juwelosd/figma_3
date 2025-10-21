@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    >
+  </script>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Document</title>
+       <style type="text/tailwindcss">
+      @theme {
+        --color-primary-gray: #353749;
+        --color-primary-blue: #0c1634;
+        --color-secondary-blue: #193071;
+        --color-secondary-gray: #b1b2b9;
+        --color-light-blue: #3990a9;
+        --color-primary-red: #cc1609;
+        --color-secondary-red: #cb5549;
+        --color-primary-cyan: #968b7c;
+        --color-secondary-white: #f9f9f9;
+
+        --shadow-primary: 0 4px 25px -4px rgba(0, 0, 0, 0.1);
+        --shadow-secondary: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+        --breakpoint-xs: 375px;
+        --breakpoint-sm: 480px;
+        --breakpoint-md: 576px;
+        --breakpoint-lg: 768px;
+        --breakpoint-xl: 1024px;
+        --breakpoint-2xl: 1320px;
+
+        --container-max-width: 1320px;
+        --container-padding-x: 1rem;
+      }
+
+      .container {
+        max-width: var(--container-max-width);
+        padding-left: var(--container-padding-x);
+        padding-right: var(--container-padding-x);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+</head>
+<body>
+    <header  style="
+        background-image: url(assets/image/about1.png);
+        "  class="h-screen bg-cover bg-center" >
+
+  <nav class="w-full h-auto backdrop-blur-lg fixed z-50 bg-[#1818181a] ">
+        <div class=" h-[90px]">
+          <div class="container">
+            <div class="flex flex-row w-auto    justify-between py-[10px]">
+              <img src="assets/image/plen.svg" class="w-[100px] h-[52px]" alt="" />
+              <ul class="flex flex-row gap-[44px] items-center text-white">
+                <li class="text-lg font-[590] leading-[152%] hover text-white hover:text-[#89CE14]">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="services.html">Services</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="rate.html">Rates</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="#">Cost Calculator</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <div class="flex flex-row gap-x-3 items-center">
+                <button
+                  class="h-auto w-auto py-3 px-[40.5px] text-white bg-linear-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
+                >
+                  Sign Up
+                </button>
+                <button
+                  class="h-auto w-auto py-3 px-[40.5px] text-[#89CE14] bg-transparent border-[1px]
+                   border ease-in-out duration-500 rounded-full
+                    hover:border-solid border-[#89CE14] hover:text-white hover:bg-linear-to-r from-[#6DA015] to-[#46C0A2] cursor-pointer text-base font-[590]"
+                >
+                  Sign In
+                </button>
+              </div>
+            </div>
+              </nav>
+               <div class="container">
+    <div class="text-center  pt-[300px]">
+        <h1 class="text-[68px] font-[700] leading-[110%] text-[#FFFFFF]">All Blog</h1>
+        <p class="text-[20px] text-[#FFFFFF] font-[400]  leading-[150%] py-2 ">Lorem ipsum dolor sit amet consectetur.
+             Congue lacinia <br> tempor orci tellus sollicitudin morbi.
+             Duis massa sit  </p>
+    </div>
+    </div>
+
+    </header>
+
+ <section class="container bg-secondary-white py-[32px]">
+      <h1 class="text-[36px] font-[700] text-[#333333] leading-[150%]">Our Blog</h1>
+
+      <div class="h-auto w-auto flex flex-row justify-between">
+        <p class="text-[18px] w-auto font-[300] text-[#606060] leading-[130%]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+          <br />
+          been the industry's standard dummy text ever since the 1500s
+        </p>
+
+      </div>
+
+      <div class="flex flex-row  justify-between gap-[24px] items-center py-[30px]">
+        <div class=" max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2041.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="  max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2042.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="  max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2042 (1).png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+             bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-row  justify-between gap-[24px] items-center py-[30px]">
+        <div class=" max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2041.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="  max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2042.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="  max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2042 (1).png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+             bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-row  justify-between gap-[24px] items-center py-[30px]">
+        <div class=" max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2041.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="  max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2042.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="  max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2042 (1).png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+             bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-row  justify-between gap-[24px] items-center py-[30px]">
+        <div class=" max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2041.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="  max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2042.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="  max-w-[424px] h-[510.57px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="assets/image/Rectangle 2042 (1).png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+             bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+
+    
+    </section>
+
+
+
+
+
+  <footer class="bg-[#0B2A77] h-auto w-auto">
+      <div class="container">
+        <div class="flex flex-row py-[25px] gap-x-20">
+          <div class="w-1/3">
+            <img src="assets/image/plen.svg" alt="" />
+            <p class="text-[16px] text-[#FFFFFF] max-w-[449px] py-[5px] pb-[30px] leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Neque consequat tristique bibendum facilisis
+              odio congue enim. Tempor justo proin faucibus praesent ac. Dui nunc sit aliquam eget
+              adipiscing feugiat turpis. Ut eleifend blandit suspendisse sollicitudin amet dictum
+              mauris.
+            </p>
+          </div>
+
+          <div class="flex flex-row justify-between w-1/3">
+            <div class="">
+              <h3 class="text-[#6DA015] font-[700] text-[18]">Support</h3>
+
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> FAQ</a>
+              </li>
+              <li class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Return & Exchange</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Shipping</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Brand</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Review</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Help</a>
+              </li>
+            </div>
+
+            <div class="">
+              <h3 class="text-[#6DA015] font-[700] text-[18]">Company</h3>
+
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Service</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Restricted Items</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Terms & Conditions</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Privacy Policy</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="blogdts.html"> Blog</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Contact Us</a>
+              </li>
+            </div>
+          </div>
+
+          <div class="w-1/3">
+            <h3 class="text-[#6DA015] font-[700] text-[18px]">Join a Newsletter</h3>
+            <div class="py-3">
+              <label class="text-[#FAFAFB] font-[300] text-[16px] leading-[150%]">Your Email</label>
+            </div>
+
+            <div class="h-auto flex items-center justify-center to-[#00303d] py-10">
+              <div class="flex items-center bg-white rounded-full overflow-hidden shadow-lg">
+                <input
+                  type="text"
+                  placeholder="Your E-mail address"
+                  class="w-auto bg-transparent text-white p-3 placeholder:text-[18px] placeholder:font-[100] placeholder:text-[#313131] text-lg focus:outline-none"
+                />
+                <button
+                  class="h-auto w-auto py-2 px-[20px] mr-1 text-white bg-linear-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
+                >
+                  Subscrube
+                </button>
+              </div>
+            </div>
+
+            <div class=" h-auto w-auto flex flex-row gap-x-5">
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]">
+               <i class="fa-brands fa-facebook-f"></i></button>
+
+
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"><i class="fa-brands fa-instagram"></i></button>
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"><i class="fa-brands fa-twitter"></i></button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center bg-blue-500/50 z-50 h-[64px p-5">
+        <h4 class="text-[#FFFFFF] text-[16px] font-[100]">
+          © SWIFT EXPRESS CARGO 2025, All Rights Reserved
+        </h4>
+      </div>
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
